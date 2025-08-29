@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  
+  <header>
+    <h2 class="logo">Portfolio.</h2>
+    <nav>
+      <a onclick="showSection('home')" class="active">Home</a>
+      <a onclick="showSection('about')">About</a>
+      <a onclick="showSection('skills')">Skills</a>
+      <a onclick="showSection('projects')">Projects</a>
+      <a onclick="showSection('contact')">Contact</a>
+    </nav>
+  </header>
+
+
+  <section id="home" class="active">
+    <div class="content">
+      <div class="text">
+        <h3>Hello, It's Me</h3>
+        <h1>Taniya Majumder</h1>
+        <h2>Undergraduate</h2>
+        <p>
+          I am passionate computer Science Engineering Student currently in my 3rd year.
+        </p>
+
+        
+        <div class="social-icons">
+          <a href="https://linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+
+        <a href="Task1- portfolio page/Taniya Majumder (Resume).pdf" class="btn" download>Download CV</a>
+      </div>
+
+      <div class="image">
+        <img src="image.jpg" alt="Profile Photo">
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+     I’m a passionate Computer Science Engineering student currently in my third year, with  foundation programming  
+     language and a knee interest in  Web-Technologies and software development . I’m actively learning and building 
+     projects to sharpen my development skills and prepare for a career in the software industry.
+    </p>
+  </section>
+
+  
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>programming language - C , JAVA , JS</li>
+      <li> Frontend - HTML , CSS , JS</li>
+      <li>Framework - React</li>
+      <li>Backend - SpringBoot</li>
+      <li>MySQL DataBase</li>
+      <li>DSA</li>
+      <li>Problem Solving</li>
+      <li>Communication</li>
+    </ul>
+  </section>
+
+  
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>INDEPENDENT DEVELOPER [ PERSONAL PROJECT ON GITHUB] 
+       [JUNE 2025 – JULY 2025] 
+      </li>
+      <li>Developed a Java-based Employee Management System. 
+         available on GitHub: github.com/taniya-232. </li>
+      
+    </ul>
+  </section>
+
+  
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: taniyamajumder232@gmail.com</p>
+    <p>Phone: +91 8274014297</p>
+    
+    <h3>Find me on</h3>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/taniya-majumder-2650062a2?" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/taniya-232" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  
+  <footer>
+    <p>© 2025 Taniya Majumder. All rights reserved.</p>
+  </footer>
+
+  
+  <script>
+    function showSection(id) {
+      document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+      document.querySelectorAll("nav a").forEach(link => link.classList.remove("active"));
+
+      document.getElementById(id).classList.add("active");
+      document.querySelector(`nav a[onclick="showSection('${id}')"]`).classList.add("active");
+    }
+  </script>
+</body>
+</html>
